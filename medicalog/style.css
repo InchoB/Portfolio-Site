@@ -1,0 +1,185 @@
+* {margin: 0 auto; padding: 0; font-family: "tahoma";}
+a {text-decoration: none; color: #fff;}
+li {list-style: none;}
+
+.line {width: 1200px; border-top: 1px solid rgba(255,255,255,0.5); margin: 15px 0 15px;}
+.line2 {width: 1px; height: 50px; border-left: 1px solid rgba(255,255,255,0.5); vertical-align: ; margin-bottom: -21px;}
+.line3 {width: 400px; border-top: 1px solid rgba(255,255,255,0.5); margin: 15px 0 15px;}
+.clear {clear: both;}
+
+#wrap {width: 1900px;}
+
+#header {
+    height: 700px; color: #fff;
+    background-image: url(img/header.jpg);
+}
+
+#nav {width: 1200px; height: 130px; background: rgba(0,0,0,0.3);}
+#nav ul li {display: inline-block;}
+.info {font-size: 14px;}
+/* 주소 위로 */
+
+.lo {margin-left: 10px;}
+.ma2 {margin-left: 300px;}
+.sns {width: 20px; padding-left: 20px; vertical-align: top;}
+
+#menu {width: 1200px; margin-top: 0px;}
+.logo {float: left; margin-left: 10px;}
+.menu {float: right; margin: 20px 10px 0 0; font-size: 18px;}
+.menu ul li:hover {text-decoration: underline;}
+.menu ul li {margin-left: 10px;}
+/* 메뉴 이미지 오른쪽으로 */
+
+#banner {padding-top: 100px;}
+.button1 {
+    width: 150px; margin-top: 20px; height: 40px;
+    text-align: center; line-height: 40px; font-weight: bold;
+    border: 1px solid #2a93c9; color: #fff; float: left;}
+.button1:hover {background: #fff; color: #2a93c9;}
+
+
+#banner {
+    width: 1200px;
+    height: 450px;
+    line-height: 50px;
+}
+.title {
+    padding-top: 50px; font-size: 70px; font-weight: bold;}
+.sub_title {padding-top: 10px; font-size: 35px; font-weight: lighter;}
+
+#banner ul li {
+    display: inline-block;
+    width: 140px;
+    font-size: 12px; text-align: center;
+    margin-right: 12px;
+    border: 1 solid #fff;}
+
+#services {
+    width: 1200px;
+    height: 700px;
+    position: relative;
+}
+/*
+.notice {
+    width: 1200px;
+    background: #fff;
+    position: absolute;
+    top: -100px;
+    left: 360px;
+    padding: 30px 0;
+    z-index: 2;
+}
+*/
+.notice1, .notice2, .notice3 {width: 400px; background: #fff;
+    position: absolute; top: -50px; font-size: 14px;}
+.notice2 {left: 400px;}
+.notice3 {left: 800px;}
+.no_ti {font-size: 24px; font-weight: bold; color:#2a93c9; margin: 30px 20px;}
+.no_date {float: left; margin: 0 20px;}
+.no_date div {margin-bottom: 20px;}
+.no_time {float: right; margin: 0 20px; font-weight: bold; color: #2a93c9}
+.no_time div {margin-bottom: 20px;}
+
+.no_sub {margin: 0 20px 0; color: #aaa;}
+.no_but {margin: 20px;
+    width: 200px; height: 40px; text-align: center; line-height: 40px;
+    border: 1px solid #2a93c9;
+    font-size: 12px; font-weight: bold; color: #2a93c9;}
+
+.no_num {margin: 20px; font-size: 30px;}
+.notice3 img {vertical-align: bottom}
+
+
+.notice4 img {position: absolute; width: 1200px; margin-top: 200px; z-index: 10}
+
+.serv {
+    width: 1200px;
+    top: 300px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.serv h1 {margin-top: 50px;}
+.serv_ti {font-weight: bold;}
+.serv ul {margin-top: 20px;}
+.serv ul li {display: inline-block; width: 270px; margin: 10px}
+.serv_sub {font-weight: lighter; font-size: 14px;}
+
+#contents1 {
+    height: 700px;
+    background-image: url(img/doctor-1149149_1920.jpg);
+    
+}
+.cont1 {
+    width: 1200px;
+    color: #fff;
+    padding-top: 100px
+}
+.cont1 .text {padding-top: 20px;}
+.button2 {
+    width: 150px; margin-top: 50px; height: 40px;
+    text-align: center; line-height: 40px;
+    border: 1px solid #2a93c9;
+    background: rgba(255,255,255,1);
+    color: #000; float: left;
+    font-size: 12px; font-weight: bold;
+}
+.button2:hover {background: #2a93c9; color: #fff;}
+
+#contents2 {height: 700px;}
+.cont2 {width: 1200px;}
+/*.cont2 img {width: 1200px; padding-top: 40px;}*/
+.cont2 h1 {margin-top: 50px;}
+.cont2 img {}
+.dep1 {float: left; padding-right: 25px;}
+.dep_img {margin-top: 50px; text-align: center;}
+.dep_ti {width: 150px; font-weight: bold;font-size: 18px; padding: 10px; text-align: center;}
+.dep_sub {width: 150px; font-weight: lighter; font-size: 14px; padding: 10px; text-align: center;}
+
+#content3 {
+    height: 700px;
+    background-image: url(img/medic-563425_1920.jpg);
+}
+.cont3 {
+    width: 1200px; text-align: center;}
+.cont3 img {margin-top: 150px;}
+.ser {color: #2a93c9; font-size: 30px; font-weight: bold;
+    margin-top: 30px;}
+.name {font-size: 20px; margin-top: 20px; font-weight: bold;}
+.add {font-size: 12px; font-weight: bold;}
+
+#footer {
+    background: #999;
+    color: #fff;
+}
+.email {
+    width: 1200px;
+    padding: 50px 0;
+}
+.email ul li {display: inline-block;}
+
+.enter input {
+    width: 250px; height: 35px;
+    background: #aaa; border: none;
+}
+.mail_icon {height: 35px; margin: -1px 0 0 -5px; vertical-align: middle;  background: #aaa;}
+.en_sns {float: right;}
+.sns2 {width: 20px; padding-left: 20px; vertical-align: middle;}
+
+.sitemap {
+    width: 1200px;
+}
+.sitemap ul {margin-top: 20px;}
+.sitemap ul li {display: inline-block; width: 270px; margin: 0 10px; vertical-align: top;}
+.sitemap ul li ul li {margin-top: 5px;}
+.si_ti {font-size: 25px; height: 60px;}
+
+.foot {
+    height: 50px;
+    margin-top: 20px;
+    background: #888;
+}
+.foot ul li {display: inline-block; line-height: 50px;}
+.pol {margin-left: 360px;}
+.copy {float: right; margin-right: 360px;}
