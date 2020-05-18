@@ -1,0 +1,189 @@
+/* RESET */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: var(--cursor-bone);
+}
+img {
+    cursor: var(--cursor-paw);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: var(--cursor-paw);
+}
+.clearfix::before,
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+/* :root */
+
+:root {
+    /* color */
+    --color-main: #d98236;
+    --color-sub: #f2c185;
+    --color-bg: #f2f2f0;
+    --color-text: #401f0c;
+
+    /* font-family */
+    /* bold */
+    --font-rubik: 'Rubik', sans-serif;
+    --font-chango: 'Chango', cursive;
+    --font-ericaOne: 'Erica One', cursive;
+    /* slant */
+    --font-badScript: 'Bad Script', cursive;
+    --font-cedarvilleCursive: 'Cedarville Cursive', cursive;
+    --font-Caveat: 'Caveat', cursive;
+    --font-homemadeApple: 'Homemade Apple', cursive;
+    --font-permanentMarker: 'Permanent Marker', cursive;
+    /* korean */
+    --font-doHyeon: 'Do Hyeon', sans-serif;
+    --font-notoSans: 'Noto Sans KR', sans-serif;
+
+    /* width */
+    --width-full: 100vw;
+    --width-inner: 70vw;
+    --width-btn: 10px;
+    --width-btnHover: 60px;
+
+    /* cursor */
+    --cursor-bone: url(../img/cursor_bone.png), auto;
+    --cursor-paw: url(../img/cursor_paw2.png) -50 -200, auto;
+    --cursor-bean: url(../img/cursor_bean.png), auto;
+}
+
+/* H Tag */
+
+h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--font-rubik);
+    color: var(--color-text);
+}
+h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: var(--font-rubik);
+    color: var(--color-text);
+}
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--font-notoSans);
+}
+h4 span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: var(--font-notoSans);
+}
+h5 {
+    font-weight: normal;
+    font-family: var(--font-rubik);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+}
+#contactBg {
+    background-image: url(../img/contactBg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow-y: scroll;
+}
+
+/* #contactUs */
+
+#contactUs {
+    margin-top: 200px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#contactUs h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-main);
+}
+#contactUs h6 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-rubik);
+    color: var(--color-text);
+    width: 500px;
+    border-bottom: 3px solid var(--color-text);
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.contactForm {
+    height: 330px;
+    padding: 20px 20px 0;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.contactForm ul {
+    height: 40px;
+}
+.contactForm ul li {
+    float: left;
+}
+.contactForm ul li:first-child {
+    width: 100px;
+}
+
+.contactForm ul li input,
+.contactForm ul li textarea {
+    border: 1px solid #bbb;
+}
+
+.contactForm ul li input {
+    height: 20px;
+}
+
+.contactForm ul li textarea {
+    width: 350px;
+}
+
+.contactForm div {
+    clear: both;
+    /* border: 1px solid red; */
+    width: 500px;
+    position: absolute;
+    top: 300px;
+    text-align: center;
+}
+
+.contactForm div input {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#footer {
+    width: 100vw;
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

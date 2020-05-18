@@ -1,0 +1,104 @@
+/* RESET */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: $cursor-bone;
+}
+img {
+    cursor: $cursor-paw;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: $cursor-paw;
+}
+.clearfix::before,
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+/* color */
+$main-color: #d98236;
+$sub-color: #f2c185;
+$bg-color: #f2f2f0;
+$text-color: #401f0c;
+
+/* font-family */
+/* bold */
+$rubik: 'Rubik', sans-serif;
+$ericaOne: 'Erica One', cursive;
+/* slant */
+$badScript: 'Bad Script', cursive;
+/* korean */
+$notoSans: 'Noto Sans KR', sans-serif;
+
+/* width */
+$width-full: 100vw;
+$width-inner: 70vw;
+$width-btn: 10px;
+$width-btnHover: 60px;
+
+/* cursor */
+$cursor-bone: url(../img/cursor_bone.png), auto;
+$cursor-paw: url(../img/cursor_paw2.png) -50 -200, auto;
+$cursor-bean: url(../img/cursor_bean.png), auto;
+
+/* H Tag */
+
+h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: $rubik;
+    color: $text-color;
+}
+h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: $rubik;
+    color: $text-color;
+}
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: $notoSans;
+}
+h4 span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: $notoSans;
+}
+h5 {
+    font-weight: normal;
+    font-family: $rubik;
+}
+
+/* #wrap */
+
+#wrap {
+    width: $width-full;
+}
+
+/* main title */
+
+.mung {
+    font-family: $ericaOne;
+    font-weight: lighter;
+    /* font-size: 10rem; */
+    font-size: 5rem;
+    text-align: center;
+}
+
+.welcome {
+    font-family: $rubik;
+    font-weight: bolder;
+    font-size: 5rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}

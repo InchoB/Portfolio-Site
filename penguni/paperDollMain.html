@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=yes" />
+        <!--
+            device-width: 디바이스 사이즈에 맞춤
+            initial-scale: 기본 사이즈
+            maximum-scale: 최대사이즈
+            user-scaleable: yes / no ,사용자가 브라우저의 확대축소를 가능하게 할 것인지 정의
+        -->
+
+        <title>Document</title>
+
+        <!-- Header Icon -->
+        <link rel="shortcut icon" href="img/*.ico" type="image/x-icon" />
+
+        <!-- font
+            -Rubik / Chango / Erica+One / Bad+Script / Caveat / Cedarville+Cursive / Homemade+Apple / Permanent+Marker / East+Sea+Dokdo / Gamja+Flower
+        -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik|Chango|Erica+One|Bad+Script|Caveat|Cedarville+Cursive|Homemade+Apple|Permanent+Marker|Do+Hyeon|Noto+Sans+KR|East+Sea+Dokdo|Gamja+Flower&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- jQuery code -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- draggable - jQuery code -->
+        <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+
+        <!-- save - jQuery code-->
+        <script type="text/javascript" src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+
+        <!-- MOBILE - jQuery code -->
+        <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+        <!-- MOBILE - CSS -->
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
+
+        <!-- CSS / RESET - link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/mainStyle.css" />
+
+        <!-- jQuery script -->
+        <script type="text/javascript" src="js/mainScript.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <section id="sample">
+                <span>click penguni !</span>
+                <div class="samImg">
+                    <img src="img/IMG_0299.PNG" alt="" />
+                    <img src="img/IMG_0300.PNG" alt="" />
+                    <img src="img/IMG_0301.PNG" alt="" />
+                    <img src="img/IMG_0302.PNG" alt="" />
+                    <img src="img/IMG_0303.PNG" alt="" />
+                    <img src="img/IMG_0304.PNG" alt="" />
+                    <img src="img/IMG_0305.PNG" alt="" />
+                    <img src="img/IMG_0306.PNG" alt="" />
+                    <img src="img/IMG_0307.PNG" alt="" />
+                    <img src="img/IMG_0308.PNG" alt="" />
+                    <img src="img/IMG_0309.PNG" alt="" />
+                    <img src="img/IMG_0315.PNG" alt="" />
+                </div>
+            </section>
+            <!-- #sample -->
+            <section id="contents">
+                <div class="downloadImage">
+                    <section id="main">
+                        <div class="mainImgBg"></div>
+                        <div class="mainImg">
+                            <img class="drag" src="img/IMG_0280.PNG" alt="" />
+                            <h1 id="font" contenteditable="true">
+                                텍스트를 입력하세요!
+                            </h1>
+                        </div>
+                        <div class="mainBg">
+                            <div class="bg bg1"></div>
+                            <div class="bg bg2"></div>
+                            <div class="bg bg3"></div>
+                            <div class="bg bg4"></div>
+                            <div class="bg bg5"></div>
+                        </div>
+
+                        <div class="mainBtn">
+                            <button onClick="window.location.reload()" id="reset">reset</button>
+                            <button id="save">save</button>
+                        </div>
+                    </section>
+                    <!-- #main -->
+                    <section id="draggable">
+                        <img class="drag off" src="img/IMG_0281.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0282.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0283.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0284.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0285.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0286.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0287.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0288.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0290.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0291.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0292.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0293.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0294.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0295.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0296.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0297.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0298.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0312.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0313.PNG" alt="" />
+                        <img class="drag off" src="img/IMG_0314.PNG" alt="" />
+                        <div class="boxwrap">
+                            <div class="box box1"></div>
+                            <div class="box box2"></div>
+                            <div class="box box3"></div>
+                            <div class="box box4"></div>
+                        </div>
+                    </section>
+                    <!-- #draggable -->
+                </div>
+            </section>
+            <!-- #contents -->
+        </div>
+    </body>
+</html>

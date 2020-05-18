@@ -1,0 +1,159 @@
+/* #sideBtn */
+
+#sideBtn {
+    width: 10vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0vw;
+
+    .side_menu {
+        width: 10vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .circle {
+        width: 2vw;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        transition: all 1s;
+        padding: 2em 0;
+        z-index: 5;
+
+        li {
+            display: block;
+            width: $width-btn;
+            height: $width-btn;
+            border-radius: 50%;
+            background: #eee;
+            transition: all 1s;
+            position: relative;
+            z-index: 5;
+            cursor: $cursor-paw;
+            /* border: 1px solid red; */
+
+            &.on {
+                background: pink;
+            }
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 0;
+                height: 0;
+                transition: all 1s;
+                cursor: $cursor-paw;
+                fill: #000;
+                mix-blend-mode: screen;
+                stroke-width: 20;
+                stroke: #fff;
+            }
+            &:nth-child(2) svg {
+                stroke-width: 3;
+                fill: #fff;
+            }
+            &:nth-child(3) svg {
+                stroke-width: 0;
+                fill: #fff;
+            }
+            & svg.on {
+                stroke: hotpink;
+            }
+        }
+    }
+
+    .circle,
+    .circle li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .side_list {
+        width: 15vw;
+        height: 100vh;
+        position: absolute;
+        top: 50%;
+        left: 10vw;
+        transform: translate(0, -50%);
+        border-left: 2px solid $sub-color;
+        display: flex;
+        transition: all 1s;
+        padding: 1em 0;
+        background: #ffffff50;
+
+        .side_text {
+            width: 5vw;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 5vw;
+            transform: translate(-50%, -50%);
+            display: flex;
+            transition: all 1s;
+            padding: 1em 0;
+            z-index: 1;
+
+            li {
+                width: $width-btn;
+                position: absolute;
+                text-align: center;
+                top: 4vh;
+                left: 50%;
+                transform: translate(-50%, 0);
+                transition: all 1s;
+                position: relative;
+                width: 10vw;
+                transition: all 1s;
+                font-weight: bolder;
+                font-family: $rubik;
+                color: $text-color;
+            }
+        }
+
+        .side_text,
+        .side_text li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    &:hover .circle li svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    &:hover .circle li:nth-child(3) svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover .circle li:nth-child(4) svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover .side_list {
+        top: 50%;
+        left: 0px;
+        transform: translate(0, -50%);
+    }
+
+    .side_menu .circle li:hover {
+        background: gold;
+    }
+
+    .side_menu .circle li:active {
+        background: goldenrod;
+    }
+}

@@ -1,0 +1,68 @@
+/* .page5 .contact */
+.page5 {
+    .page-left {
+        position: relative;
+
+        .page-left__img {
+            width: 40vw;
+            height: 50vh;
+            position: absolute;
+            top: calc(50% - 25vh);
+            left: calc(50% - 20vw);
+            border: 10px solid $subBlue;
+            box-sizing: border-box;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #5e9977;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .page-right {
+        position: relative;
+
+        .form {
+            width: 30vw;
+            height: 50vh;
+            position: absolute;
+            top: calc(50% - 25vh);
+            left: calc(50% - 15vw);
+            padding: 20px;
+            border: 10px solid $mainYellow;
+            background: $subYellow;
+            border-radius: 20px;
+            box-sizing: border-box;
+
+            .form-sub {
+                width: 100%;
+                display: flex;
+                margin: 20px 0;
+
+                span {
+                    &:nth-child(1) {
+                        width: 50px;
+                        padding: 15px 10px 0 0;
+                        text-align: right;
+                    }
+                }
+                &.text span:nth-child(2) {
+                    width: 80%;
+
+                    textarea {
+                        height: 200px;
+                        resize: none;
+                        overflow-y: scroll;
+                    }
+                }
+            }
+        }
+        button {
+            width: 100px;
+            position: absolute;
+            right: 20px;
+        }
+    }
+}
+/* .page5 .contact_end */

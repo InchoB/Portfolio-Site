@@ -1,0 +1,34 @@
+/* .aside */
+.aside {
+    position: fixed;
+    right: 0;
+    top: calc(50% - 90px);
+    height: 180px;
+    z-index: 5;
+
+    ul {
+        li {
+            a {
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #fff9cc;
+                text-indent: -999px;
+                margin: 20px;
+                line-height: 50px;
+                overflow: hidden;
+                border: 1px solid #fee467;
+
+                &:hover {
+                    background: #fff;
+                }
+
+                &.on {
+                    background: #fee467;
+                }
+            }
+        }
+    }
+}
+/* .aside_end */

@@ -1,0 +1,53 @@
+/* .page2 .about*/
+.page2 {
+    font-size: 1rem;
+
+    p {
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+
+    .page-left {
+        position: relative;
+
+        .page-left-sub {
+            text-align: center;
+            line-height: 2;
+
+            .page-left-sub__img {
+                img {
+                    width: 50%;
+                }
+            }
+
+            .page-left-sub__text {
+                position: absolute;
+                left: calc(50% - 40%);
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+    }
+    .page-right {
+        position: relative;
+
+        .page-right-sub {
+            text-align: center;
+            line-height: 2;
+
+            .page-right-sub__img {
+                img {
+                    width: 50%;
+                }
+            }
+
+            .page-right-sub__text {
+                position: absolute;
+                left: calc(50% - 40%);
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+/* .page2 .about_end*/

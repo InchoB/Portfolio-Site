@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>MUNGDO COFFEE</title>
+        <!-- font
+            -Rubik / Chango / Erica+One / Bad+Script / Caveat / Cedarville+Cursive / Homemade+Apple / Permanent+Marker
+        -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik|Chango|Erica+One|Bad+Script|Caveat|Cedarville+Cursive|Homemade+Apple|Permanent+Marker|Do+Hyeon|Noto+Sans+KR&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- jQuery code -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/mainStyle.css" />
+        <link rel="stylesheet" href="css/mainStyle-m.css" />
+
+        <!-- jQuery script -->
+        <script language="javascript" src="js/mainScript.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header" class="clearfix">
+                <h1 class="logo mung">
+                    <span><img src="img/logoC.png" alt="" /></span>
+                    <a href="index.html">MUNG DO COFFEE</a>
+                </h1>
+                <!-- .logo -->
+                <nav class="nav">
+                    <ul class="menu">
+                        <li onclick="location.href='mungdo_main.html'"><a href="mungdo_main.html">HOME</a></li>
+                        <li onclick="location.href='ourService.html'"><a href="ourService.html">Our Service</a></li>
+                        <li onclick="location.href='aboutUs.html'"><a href="aboutUs.html">About Us</a></li>
+                        <li onclick="location.href='contactUs.html'"><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                    <h1 class="logo">
+                        <!-- <img src="img/logoC.png" alt="" /> -->
+                    </h1>
+                </nav>
+                <!-- .nav -->
+            </header>
+            <!-- #header -->
+
+            <section id="banner" class="clearfix">
+                <div class="ban_bg"></div>
+                <x-sign
+                    >mung do <br />
+                    coffee</x-sign
+                >
+                <span id="scrollArrow">
+                    SCROLL
+                    <span>
+                        <svg
+                            version="1.1"
+                            id="Слой_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="32px"
+                            height="32px"
+                            viewBox="0 0 32 32"
+                            enable-background="new 0 0 32 32"
+                            xml:space="preserve"
+                        >
+                            <g id="Double_Chevron_Down">
+                                <path
+                                    fill="#fff"
+                                    d="M22.285,15.349L16,21.544l-6.285-6.196c-0.394-0.391-1.034-0.391-1.428,0c-0.394,0.391-0.394,1.024,0,1.414
+		l6.999,6.899c0.379,0.375,1.048,0.377,1.429,0l6.999-6.899c0.394-0.391,0.394-1.025,0-1.415
+		C23.318,14.958,22.68,14.958,22.285,15.349z"
+                                />
+                                <path
+                                    fill="#fff"
+                                    d="M15.286,16.662c0.379,0.375,1.048,0.377,1.429,0l6.999-6.899c0.394-0.391,0.394-1.024,0-1.414
+		c-0.394-0.391-1.034-0.391-1.428,0L16,14.544L9.715,8.349c-0.394-0.391-1.034-0.391-1.428,0c-0.394,0.391-0.394,1.024,0,1.414
+		L15.286,16.662z"
+                                />
+                            </g>
+                        </svg>
+                    </span>
+                </span>
+                <!-- #scrollArrow -->
+                <span id="welcome" class="ban1"> <span class="sub welcome">WELCOME</span> </span
+                ><!-- #welcome -->
+                <!-- <span class="ban2 mung">COFFEE</span> -->
+            </section>
+            <!-- # banner -->
+
+            <section id="contents" class="clearfix">
+                <div class="cont1_inner">
+                    <ul class="cont1 clearfix">
+                        <li class="cont_img cont_img1"></li>
+                        <li class="cont_text">
+                            <h2>COFFEE</h2>
+                            <h5>
+                                &nbsp;&nbsp;A beverage as black as ink, useful against numerous illnesses, particularly those of the stomach. Its consumers take it in the morning, quite frankly, in a
+                                porcelain cup that is passed around and from which each one drinks a cupful. It is composed of water and the fruit from a bush called bunnu.
+                                <br />
+                                — Léonard Rauwolf, Reise in die Morgenländer (in German)
+                            </h5>
+                            <br />
+                            <h5 class="ment">
+                                &nbsp;&nbsp;Ei! wie schmeckt der Coffee süße, Lieblicher als tausend Küsse, Milder als Muskatenwein. Coffee, Coffee muss ich haben,
+                                <br />
+                                — Johann Sebastian Bach
+                            </h5>
+                            <br />
+                            <h4>
+                                <span> 부드러우면서도 은은하게 씁쓸한 초콜릿향이 나는 </span> 인도네시아 만델링<br />
+                                <span>오묘한 과일향을 닮은 특유의 산미의 </span> 케냐 AA<br />
+                                <span>마일드한 맛과 적당한 산미의 조화가 일품인 </span> 브라질 산토스<br />
+                                <span>'원두계의 귀부인'으로 불리우는 은은한 과일향과 꽃향의 산미 </span> 에티오피아 예가체프<br />
+                                <span>부드러운 목넘김과 조화로운 맛으로 입문용으로 좋은 </span> 콜롬비아 수프리모<br /><br />
+                                원하는 풍미의 원두를 선택 가능하여 차별화된 나만의 커피를 즐기실 수 있습니다.
+                            </h4>
+                        </li>
+                    </ul>
+                    <!-- .cont1 -->
+                    <ul class="cont1 clearfix">
+                        <li class="cont_text">
+                            <h2>DESSERT</h2>
+                            <h5>
+                                &nbsp;&nbsp;Dessert consist of variations of flavors, textures, and appearances. Desserts can be defined as a usually sweeter course that concludes a meal. This
+                                definition includes a range of courses ranging from fruits or dried nuts to multi-ingredient cakes and pies. Many cultures have different variations of dessert. In
+                                modern times the variations of desserts have usually been passed down or come from geographical regions. This is one cause for the variation of desserts. These are some
+                                major categories in which desserts can be placed.
+                            </h5>
+                            <br />
+                            <h4>
+                                &nbsp;&nbsp;강아지와 함께 즐길 수 있는 디저트 메뉴로 구성되어 있습니다.<br />
+                                각종 알레르기를 우려하여 모든 재료를 공개하고 있으니, 안심하고 드셔도 됩니다. <br /><br />
+                                강아지를 위한 메뉴는 메뉴판의 '멍두간식'란을 참고하여 주시기 바랍니다.<br />
+                                감사합니다.
+                            </h4>
+                        </li>
+                        <li class="cont_img cont_img2"></li>
+                    </ul>
+                    <!-- .cont1 -->
+                    <ul class="cont1 clearfix">
+                        <li class="cont_img cont_img3"></li>
+                        <li class="cont_text">
+                            <h2>DOG</h2>
+                            <h5>
+                                &nbsp;&nbsp;Their long association with humans has led dogs to be uniquely attuned to human behavior and they are able to thrive on a starch-rich diet that would be
+                                inadequate for other canids. Dogs vary widely in shape, size and colors. They perform many roles for humans, such as hunting, herding, pulling loads, protection,
+                                assisting police and military, companionship and, more recently, aiding disabled people and therapeutic roles. This influence on human society has given them the
+                                sobriquet of "man's best friend".
+                            </h5>
+                            <br />
+                            <h4>
+                                &nbsp;&nbsp;저희 멍두퍼피는 강아지와 함께 동반 할 수 있는 카페입니다.<br /><br />
+                                &nbsp;&nbsp;반려견이 있으신 분들은 강아지와 함께 방문해 주셔도 좋고, 반려견이 없으시다면 가볍게 방문하셔서 저희 카페 지킴이 멍두와 함께 즐거운 시간을 보내주세요.<br /><br />
+                                &nbsp;&nbsp;멍두는 오후 12:00 부터 오후 6:00시 까지 함께합니다.
+                            </h4>
+                        </li>
+                    </ul>
+                    <!-- .cont1 / menu -->
+                </div>
+                <!-- .cont1_inner -->
+                <div id="gallary" class="cont2 clearfix">
+                    <h3>gallary</h3>
+                    <div class="cont2_inner">
+                        <div class="container">
+                            <div class="card">
+                                <span class="face front">
+                                    <a href="#"><img src="img/KakaoTalk_20200131_150446533.jpg" alt="" /></a>
+                                </span>
+                                <span class="face back">
+                                    멍두퍼피 지킴이 <br />
+                                    <h4>멍두</h4>
+                                    <br />
+                                    나이 : 1살<br />
+                                    취미 : 새친구 사귀기<br />
+                                    특기 : 낮잠자기<br />
+                                    출근시간 : 오후 12시 <br />
+                                    퇴근시간 : 오후 6시
+                                </span>
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .container -->
+                        <div class="container">
+                            <div class="card">
+                                <span class="face front">
+                                    <a href="#"><img src="img/coffee-4648041_1920.jpg" alt="" /></a>
+                                </span>
+                                <span class="face back">
+                                    멍두퍼피 지킴이 <br />
+                                    <h4>멍두</h4>
+                                    <br />
+                                    나이 : 1살<br />
+                                    취미 : 새친구 사귀기<br />
+                                    특기 : 낮잠자기<br />
+                                    출근시간 : 오후 12시 <br />
+                                    퇴근시간 : 오후 6시
+                                </span>
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .container -->
+                        <div class="container">
+                            <div class="card">
+                                <span class="face front">
+                                    <a href="#"><img src="img/237.jpg" alt="" /></a>
+                                </span>
+                                <span class="face back">
+                                    멍두퍼피 지킴이 <br />
+                                    <h4>멍두</h4>
+                                    <br />
+                                    나이 : 1살<br />
+                                    취미 : 새친구 사귀기<br />
+                                    특기 : 낮잠자기<br />
+                                    출근시간 : 오후 12시 <br />
+                                    퇴근시간 : 오후 6시
+                                </span>
+                            </div>
+                            <!-- .card -->
+                        </div>
+                        <!-- .container -->
+                    </div>
+                    <!-- .cont2_inner -->
+                </div>
+                <!-- .cont2 / gallery -->
+
+                <div class="cont3">
+                    <div class="map">
+                        <h3>MAP</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1579.9778687496712!2d127.07172778601272!3d37.62672894734586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbbd062ea0c63%3A0x75db50dd12399ce!2z64yA7Jqw7KeB7JeF64ql66Cl6rCc67Cc7JuQ!5e0!3m2!1sko!2skr!4v1581047006785!5m2!1sko!2skr"
+                            width="800"
+                            height="500"
+                            frameborder="0"
+                            style="border: 0;"
+                        ></iframe>
+                        <div class="mapImg">
+                            <img src="img/siba2.png" alt="" />
+                            <span class="mBox mClick">CLICK ME!<span class="mArrowC"> </span></span>
+                            <span class="mBox mHere">HERE<span class="mArrowH"> </span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- .cont3 / map -->
+            </section>
+            <!-- #contents -->
+
+            <section id="footer" class="clearfix">
+                <div class="foot_inner">
+                    <div class="logo_sns clearfix">
+                        <ul class="foot_logo">
+                            <li>
+                                <a href="#banner"><img src="img/logo.png" alt="" /></a>
+                            </li>
+                        </ul>
+                        <!-- .foot_logo -->
+
+                        <ul class="foot_sub">
+                            <li><a href="#">이용약관</a></li>
+                            <li>|</li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li>|</li>
+                            <li><a href="#">고객센터</a></li>
+                            <li>|</li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                        <!-- .foot_sub -->
+
+                        <ul class="foot_sns">
+                            <li class="you">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <svg
+                                        fill="#fff"
+                                        id="Layer_1"
+                                        style="enable-background: new 0 0 124 124;"
+                                        version="1.1"
+                                        viewBox="0 0 124 124"
+                                        xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    >
+                                        <g id="XMLID_67_">
+                                            <g id="XMLID_68_">
+                                                <g id="XMLID_69_">
+                                                    <path
+                                                        class="st0"
+                                                        d="M107.2,50c0-10.9-8.8-19.7-19.7-19.7h-51c-10.9,0-19.7,8.8-19.7,19.7V74     c0,10.9,8.8,19.7,19.7,19.7h51c10.9,0,19.7-8.8,19.7-19.7V50z M75,63.2L54.7,74.4c-0.9,0.5-1.7-0.2-1.7-1.2V50.3     c0-1,0.8-1.7,1.7-1.2l20.5,11.7C76.1,61.4,75.9,62.7,75,63.2z"
+                                                        id="XMLID_70_"
+                                                    />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="twi">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <svg
+                                        fill="#fff"
+                                        id="Layer_1"
+                                        style="enable-background: new 0 0 124 124;"
+                                        version="1.1"
+                                        viewBox="0 0 124 124"
+                                        xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    >
+                                        <g id="XMLID_55_">
+                                            <g id="XMLID_56_">
+                                                <g id="XMLID_65_">
+                                                    <path
+                                                        class="st0"
+                                                        d="M106.3,36.6c-2.8,1.3-6,2.1-9,2.6c1.5-0.2,3.6-2.9,4.5-3.9c1.3-1.6,2.4-3.5,3-5.5     c0.1-0.2,0.1-0.4,0-0.5c-0.2-0.1-0.3,0-0.5,0c-3.4,1.8-6.9,3.2-10.7,4.1c-0.3,0.1-0.5,0-0.7-0.2c-0.3-0.4-0.6-0.7-0.9-1     c-1.6-1.3-3.3-2.4-5.2-3.2c-2.5-1-5.3-1.5-8-1.3c-2.6,0.2-5.2,0.9-7.5,2.1c-2.3,1.2-4.4,2.9-6.1,5c-1.7,2.1-3,4.6-3.6,7.3     c-0.6,2.6-0.6,5.1-0.2,7.7c0.1,0.4,0,0.5-0.4,0.4C46.2,48.1,34,42.9,24.1,31.6c-0.4-0.5-0.7-0.5-1,0c-4.3,6.5-2.2,16.9,3.2,22.1     c0.7,0.7,1.5,1.4,2.3,2c-0.3,0.1-3.9-0.3-7.1-2c-0.4-0.3-0.6-0.1-0.7,0.4c0,0.7,0,1.3,0.1,2.1c0.8,6.6,5.4,12.7,11.6,15     c0.7,0.3,1.6,0.6,2.4,0.7c-1.4,0.3-2.9,0.5-7,0.2c-0.5-0.1-0.7,0.2-0.5,0.6C30.4,81.1,37,83.6,42,85c0.7,0.1,1.3,0.1,2,0.3     c0,0.1-0.1,0.1-0.1,0.1c-1.6,2.5-7.3,4.4-10,5.3c-4.8,1.7-10.1,2.4-15.2,1.9c-0.8-0.1-1-0.1-1.2,0c-0.2,0.1,0,0.3,0.2,0.5     c1,0.7,2.1,1.3,3.2,1.9c3.2,1.7,6.6,3.1,10.1,4.1c18.2,5,38.8,1.3,52.5-12.3C94.2,76.2,98,61.5,98,46.7c0-0.6,0.7-0.9,1.1-1.2     c2.8-2.1,5-4.6,7.1-7.4c0.5-0.6,0.4-1.2,0.4-1.4c0,0,0-0.1,0-0.1C106.6,36.4,106.7,36.4,106.3,36.6z"
+                                                        id="XMLID_66_"
+                                                    />
+                                                </g>
+                                                <g id="XMLID_63_"><path class="st1" d="M43.9,101C51.4,101,44.2,101,43.9,101C44.9,101,43.8,101,43.9,101z" id="XMLID_64_" /></g>
+                                                <g id="XMLID_61_"><path class="st1" d="M43.9,101C43.8,101,42.4,101,43.9,101C43.9,101,43.6,101,43.9,101z" id="XMLID_62_" /></g>
+                                                <g id="XMLID_59_"><path class="st1" d="M46.9,101.1C46.9,100.9,48.5,101.1,46.9,101.1C46.9,101,47.1,101.1,46.9,101.1z" id="XMLID_60_" /></g>
+                                                <g id="XMLID_57_"><path class="st1" d="M78.5,27.9c-0.1,0.1-0.2,0.1-0.4,0C78.2,27.9,78.4,27.9,78.5,27.9z" id="XMLID_58_" /></g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="ins">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg
+                                        fill="#fff"
+                                        enable-background="new 0 0 512 512"
+                                        id="Layer_1"
+                                        version="1.1"
+                                        viewBox="0 0 512 512"
+                                        xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    >
+                                        <g>
+                                            <path
+                                                d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"
+                                            />
+                                            <path
+                                                d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"
+                                            />
+                                            <path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- .foot_sns -->
+                    </div>
+                    <!-- .logo_sns -->
+
+                    <div class="foot_menu">
+                        <ul class="menu_sub clearfix">
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="#">OUR SERVICE</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                        <!-- .menu_sub -->
+                        <div class="menu_info">
+                            <ul>
+                                <li>사업자등록번호: 123-45-67890</li>
+                                <li>주소 : 서울시 강남구 어쩌구로 저쩌구 21-8</li>
+                                <li>대표 : 멍두</li>
+                                <li>개인정보 보호책임자 : 멍두</li>
+                                <li>호스팅 서비스제공자 : MUNGDOCOFFEE co.</li>
+                            </ul>
+                            <ul>
+                                <li>대표전화 : 080-123-4567</li>
+                                <li>E-MAIL : mungdo@coffee.com</li>
+                            </ul>
+                        </div>
+                        <!-- .menu_info -->
+                    </div>
+                    <!-- .foot_menu -->
+                    <div class="copyright clearfix">
+                        &copy; 2020 MUNGDOCOFFEE ALL RIGHTS RESERVED.
+                    </div>
+                    <!-- .copyright -->
+                </div>
+                <!-- .foot_inner -->
+            </section>
+            <!-- #FOOTER -->
+
+            <section id="sideBtn">
+                <div class="side_menu">
+                    <ul class="circle">
+                        <li class="cBanner">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fas"
+                                data-icon="home"
+                                class="svg-inline--fa fa-home fa-w-18"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                width="50px"
+                                height="50px"
+                            >
+                                <path
+                                    d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                                ></path>
+                            </svg>
+                            <!-- <a href="#banner"></a> -->
+                        </li>
+                        <li class="cScrollArrow">
+                            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" xml:space="preserve">
+                                <!-- <style type="text/css">
+                                    .st0 {
+                                        fill: none;
+                                        stroke: #ff0000;
+                                        stroke-miterlimit: 10;
+                                    }
+                                    .st1 {
+                                        stroke: url(#SVGID_1_);
+                                        stroke-miterlimit: 10;
+                                    }
+                                </!-->
+
+                                <g>
+                                    <path
+                                        d="M207.2,48.8C195.9,37.5,180,32,163,32c0,0,0,0,0,0c-28.5,0-61.9,14.7-89.1,41.9c-43.7,43.7-55,103.4-25.1,133.3
+		c11.3,11.3,26.9,16.7,44.2,16.7c28.5,0,61.9-14.6,89.1-41.8C225.8,138.3,237.1,78.7,207.2,48.8z M176.4,176.4
+		c-24.7,24.7-55.9,39.5-83.4,39.5c-15.8,0-29.2-5-38.6-14.4c-12.5-12.5-17.1-31.8-12.8-54.3c4.4-23.6,17.9-47.6,38-67.7
+		C104.3,54.8,135.5,40,163,40c16,0,29.2,5,38.6,14.4c12.5,12.5,17.1,31.8,12.8,54.3C209.9,132.4,196.5,156.4,176.4,176.4z"
+                                    />
+                                    <path
+                                        d="M155,81.8c-4.4,3.1-8.9,6.6-13.5,10.5c-0.6,0.5-1.1,1-1.7,1.5l-0.9,0.8l-0.4,0.4l-0.1,0.1l-0.1,0c-0.1,0.1,0.1-0.1-0.2,0.2
+		l-0.2,0.2c-0.5,0.5-1.1,1-1.6,1.5c-0.6,0.6-1.2,1.3-1.8,1.9c-2.3,2.5-4.4,5.2-6.3,8.1c-1.9,2.9-3.5,6-4.9,9.1
+		c-1.4,3.1-2.5,6.1-3.5,9c-1,2.9-2,5.6-3,8c-1,2.5-2.1,4.8-3.4,7c-1.3,2.2-2.7,4.3-4.3,6.3c-0.4,0.5-0.8,1-1.2,1.5l-0.6,0.7
+		l-0.3,0.4l-0.2,0.2l-0.1,0.1l0,0c0,0,0.2-0.1,0.1,0c-1,1.1-2,2.1-3,3.2c-1,1.1-1.9,1.9-2.8,2.9c-0.5,0.5-0.9,1-1.4,1.4
+		c-0.5,0.5-1,0.9-1.4,1.4c-1.9,1.9-3.8,3.7-5.7,5.5c-1.9,1.8-3.7,3.5-5.5,5.1c-1.8,1.7-3.5,3.3-5.2,4.8C68.1,186,59,194.2,59,194.2
+		c-0.6,0.6-0.9,1.5-0.5,2.3c0.5,1,1.7,1.5,2.7,1l0,0c0,0,0.7-0.3,2-1c1.3-0.6,3.2-1.6,5.6-2.8c2.4-1.2,5.3-2.8,8.6-4.7
+		c3.3-1.9,7-4,10.9-6.5c2-1.2,4-2.6,6.1-3.9c2.1-1.4,4.2-2.9,6.4-4.4c2.2-1.6,4.5-3.2,6.7-4.9c0.6-0.4,1.1-0.9,1.7-1.3
+		c0.6-0.5,1.2-0.9,1.7-1.4c1.1-0.9,2.4-1.9,3.5-2.9c1.1-0.9,2.2-1.9,3.3-2.8c0.6-0.6,1.2-1.2,1.9-1.8c0.6-0.6,1.2-1.2,1.7-1.8
+		c2.3-2.4,4.5-5.1,6.4-8c3.9-5.8,6.5-12.4,8.6-18.1c1-2.9,2-5.6,3-8.1c1-2.5,2.1-4.8,3.3-7.1c1.2-2.2,2.7-4.3,4.2-6.3l1.1-1.4
+		c0.5-0.5,1-1.1,1.5-1.6l0.2-0.2c-0.2,0.2,0,0-0.1,0.1l0,0l0.1-0.1l0.4-0.4l0.7-0.8c0.5-0.5,0.9-1,1.4-1.5c3.8-4,7.6-7.8,11.4-11.3
+		c1.9-1.8,3.7-3.5,5.5-5.1c1.8-1.7,3.5-3.3,5.2-4.8c6.8-6.1,12.5-11.2,16.4-14.8c4-3.6,6.3-5.7,6.3-5.7c0.6-0.6,0.9-1.5,0.5-2.3
+		c-0.5-1-1.7-1.5-2.7-1l0,0c0,0-2.9,1.3-7.7,3.8c-2.4,1.2-5.3,2.8-8.6,4.7c-3.3,1.9-7,4-10.9,6.5c-2,1.2-4,2.6-6.1,3.9
+		C159.4,78.8,157.2,80.3,155,81.8z"
+                                    />
+                                </g>
+                            </svg>
+
+                            <!-- <a href="#scrollArrow"></a> -->
+                        </li>
+                        <li class="cGallary">
+                            <svg
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="50px"
+                                height="50px"
+                                viewBox="0 0 339.5 339.5"
+                                enable-background="new 0 0 339.5 339.5"
+                                xml:space="preserve"
+                            >
+                                <path
+                                    d="M273.617,259.537c1.453-5.068,6.727-8.012,11.795-6.559c5.068,1.416,7.993,6.708,6.577,11.776
+	c-4.658,16.285-17.589,29.067-34.341,33.241l-155.072,38.775c-26.217,6.055-51.93-9.783-57.883-35.59L4.624,127.514
+	c-5.851-25.34,9.679-50.69,34.909-56.998l36.036-9.008c5.115-1.277,10.295,1.825,11.57,6.939c1.277,5.115-1.826,10.286-6.94,11.572
+	l-36.045,9.008c-15.13,3.783-24.446,18.996-20.943,34.201l40.079,173.649c3.568,15.503,18.996,25.005,34.824,21.353l154.914-38.737
+	C263.07,276.979,270.841,269.338,273.617,259.537z M320.311,199.391V50.7c0-15.81-12.818-28.62-28.619-28.62H119.971
+	c-15.811,0-28.621,12.811-28.621,28.62v110.53l40.955-40.955c3.727-3.727,9.764-3.727,13.49,0l70.787,70.786l50.737-33.819
+	c3.782-2.523,8.832-2.021,12.036,1.193L320.311,199.391L320.311,199.391z M320.068,226.147L271.4,177.459l-50.738,33.819
+	c-3.782,2.534-8.832,2.013-12.037-1.192l-69.574-69.575l-47.701,47.7v34.21c0,15.801,12.811,28.62,28.621,28.62h171.721
+	C306.243,251.041,318.262,240.196,320.068,226.147L320.068,226.147z M119.971,3h171.721c26.347,0,47.7,21.354,47.7,47.7v171.721
+	c0,26.347-21.354,47.7-47.7,47.7H119.971c-26.348,0-47.701-21.354-47.701-47.7V50.7C72.27,24.354,93.623,3,119.971,3z M243.99,41.16
+	h38.16c10.547,0,19.08,8.543,19.08,19.08V98.4c0,10.537-8.533,19.08-19.08,19.08h-38.16c-10.545,0-19.08-8.543-19.08-19.08V60.24
+	C224.91,49.703,233.445,41.16,243.99,41.16z M243.99,60.24V98.4h38.16V60.24H243.99z"
+                                />
+                            </svg>
+                            <!-- <a href="#gallary"></a> -->
+                        </li>
+                        <li class="cMap">
+                            <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fas"
+                                data-icon="map-marker-alt"
+                                class="svg-inline--fa fa-map-marker-alt fa-w-12"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                                ></path>
+                            </svg>
+                            <!-- <a href="#"></a> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="side_list">
+                    <ul class="side_text">
+                        <li>home</li>
+                        <li>menu</li>
+                        <li>gallery</li>
+                        <li>map</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- #wrap -->
+    </body>
+</html>

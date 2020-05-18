@@ -1,0 +1,55 @@
+/* font-family */
+/* bold */
+$rubik: 'Rubik', sans-serif;
+$chango: 'Chango', cursive;
+$ericaOne: 'Erica One', cursive;
+$sigmarOne: 'Sigmar One', cursive;
+$alegreyaSansSC: 'Alegreya Sans SC', sans-serif;
+$roboto: 'Roboto Condensed', sans-serif;
+/* slant */
+$badScript: 'Bad Script', cursive;
+$cedarvilleCursive: 'Cedarville Cursive', cursive;
+$Caveat: 'Caveat', cursive;
+$homemadeApple: 'Homemade Apple', cursive;
+$permanentMarker: 'Permanent Marker', cursive;
+/* korean */
+$doHyeon: 'Do Hyeon', sans-serif;
+$notoSans: 'Noto Sans KR', sans-serif;
+
+$mainYellow: #fee467;
+$subYellow: #fff9cc;
+$subBlue: #8dc2cd;
+$subPink: #f16586;
+$subOrange: #f16622;
+$sub2Orange: #fbad18;
+
+/* RESET */
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+.clearfix::before,
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-family: $rubik, $notoSans;
+    text-shadow: none;
+    position: relative;
+    // overflow: hidden;
+}
+
+/* body */

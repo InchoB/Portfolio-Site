@@ -1,0 +1,71 @@
+/* .page1 .home */
+.page1 {
+    font-family: $alegreyaSansSC;
+    background: url(../img/2240.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    /* .main-circle */
+    .main-circle {
+        width: 800px;
+        height: 800px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bolder;
+        background: #fff;
+        mix-blend-mode: screen;
+        color: #000;
+        position: absolute;
+        top: calc(50% - 400px);
+        left: calc(50% - 400px);
+        border-radius: 50%;
+
+        /* ,main-title */
+        .main-title {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: calc(50% - 250px);
+            left: calc(50% - 250px);
+            font-size: 10rem;
+        }
+        /* .main-title_end */
+
+        #scrollArrow {
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: calc(90% - 25px);
+            left: calc(50% - 50px);
+            cursor: pointer;
+            color: $subPink;
+            animation: scroll 2s infinite;
+            z-index: 99;
+
+            svg {
+                fill: $subPink;
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+        @keyframes scroll {
+            0% {
+                top: calc(90% - 25px);
+            }
+            50% {
+                top: calc(91% - 25px);
+            }
+            100% {
+                top: calc(90% - 25px);
+            }
+        }
+    }
+    /* .main-circle_end */
+}
+/* .page1 .home_end */

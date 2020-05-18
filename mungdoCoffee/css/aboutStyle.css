@@ -1,0 +1,216 @@
+/* RESET */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: var(--cursor-bone);
+}
+img {
+    cursor: var(--cursor-paw);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: var(--cursor-paw);
+}
+.clearfix::before,
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+/* :root */
+
+:root {
+    /* color */
+    --color-main: #d98236;
+    --color-sub: #f2c185;
+    --color-bg: #f2f2f0;
+    --color-text: #401f0c;
+
+    /* font-family */
+    /* bold */
+    --font-rubik: 'Rubik', sans-serif;
+    --font-chango: 'Chango', cursive;
+    --font-ericaOne: 'Erica One', cursive;
+    /* slant */
+    --font-badScript: 'Bad Script', cursive;
+    --font-cedarvilleCursive: 'Cedarville Cursive', cursive;
+    --font-Caveat: 'Caveat', cursive;
+    --font-homemadeApple: 'Homemade Apple', cursive;
+    --font-permanentMarker: 'Permanent Marker', cursive;
+    /* korean */
+    --font-doHyeon: 'Do Hyeon', sans-serif;
+    --font-notoSans: 'Noto Sans KR', sans-serif;
+
+    /* width */
+    --width-full: 100vw;
+    --width-inner: 70vw;
+    --width-btn: 10px;
+    --width-btnHover: 60px;
+
+    /* cursor */
+    --cursor-bone: url(../img/cursor_bone.png), auto;
+    --cursor-paw: url(../img/cursor_paw2.png) -50 -200, auto;
+    --cursor-bean: url(../img/cursor_bean.png), auto;
+}
+
+/* H Tag */
+
+h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: var(--font-rubik);
+    color: var(--color-text);
+}
+h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: var(--font-rubik);
+    color: var(--color-text);
+}
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--font-notoSans);
+}
+h4 span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: var(--font-notoSans);
+}
+h5 {
+    font-weight: normal;
+    font-family: var(--font-rubik);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+}
+
+#contBg {
+    background-image: url(../img/contBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow-y: scroll;
+}
+#contBg .contBgW {
+    width: 100vw;
+    height: 2000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* #contactUs */
+
+#contents {
+    margin-top: 200px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#contents h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-main);
+}
+#contents h6 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-rubik);
+    color: var(--color-text);
+    width: 500px;
+    border-bottom: 3px solid var(--color-text);
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+/* coffee */
+#contents .cont_img1 {
+    background: url(../img/cont6.png) no-repeat 30vw top fixed;
+}
+
+/* dessert */
+#contents .cont_img2 {
+    background: url(../img/cont5_1.png) no-repeat 42vw top fixed;
+}
+
+/* dog */
+#contents .cont_img3 {
+    background: url(../img/cont7.png) no-repeat 14vw top fixed;
+}
+
+#footer {
+    width: 100vw;
+    margin-top: 50px;
+    position: absolute;
+    top: 1750px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* iPad Pro */
+@media (max-width: 1300px) {
+    #contents h2 {
+        font-size: 3rem;
+    }
+    #contents h4 {
+        font-size: 0.9rem;
+    }
+    #contents h4 span {
+        font-size: 0.8rem;
+    }
+    #contents h5 {
+        font-size: 0.8rem;
+    }
+
+    /* dog */
+    #contents .cont_img3 {
+        background: url(../img/cont7.png) no-repeat 14vw 20vh fixed;
+    }
+}
+
+/* iPad */
+@media (max-width: 768px) {
+    #contents h2 {
+        font-size: 2rem;
+    }
+    #contents h4 {
+        font-size: 0.8rem;
+    }
+    #contents h4 span {
+        font-size: 0.7rem;
+    }
+    #contents h5 {
+        display: none;
+    }
+
+    /* coffee */
+    #contents .cont_img1 {
+        background: url(../img/cont6.png) no-repeat 5vw -20vh fixed;
+    }
+
+    /* dessert */
+    #contents .cont_img2 {
+        background: url(../img/cont5_1.png) no-repeat 42vw top fixed;
+    }
+
+    /* dog */
+    #contents .cont_img3 {
+        background: url(../img/cont7.png) no-repeat -5vw top fixed;
+    }
+}

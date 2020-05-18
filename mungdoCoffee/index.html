@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>MUNGDO COFFEE</title>
+
+        <!-- font - Rubik / Erica+One / Chango -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik|Chango|Erica+One&display=swap" rel="stylesheet" />
+
+        <!-- jQuery code -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+        <!-- CSS / RESET -->
+        <style type="text/css">
+            /* RESET */
+            * {
+                margin: 0 auto;
+                padding: 0;
+                font-size: 1rem;
+                font-family: 'Erica One', cursive;
+            }
+            li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            .clearfix::before,
+            .clearfix::after {
+                clear: both;
+                content: '';
+                display: block;
+            }
+        </style>
+
+        <!-- CSS -->
+        <style type="text/css">
+            * {
+                transition: all 2s;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #intro {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #intro .container {
+                position: relative;
+            }
+
+            #intro .container img {
+                width: 100vw;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -20%);
+            }
+
+            #intro span {
+                width: 100vw;
+                height: 100vh;
+                background: rgba(255, 255, 255, 0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30rem;
+                line-height: 0.8;
+                padding-top: 20vh;
+                text-align: center;
+                color: #000;
+                mix-blend-mode: screen;
+                transition-delay: 0.5s;
+            }
+
+            #intro div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .mung {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            #intro span:hover {
+                background: #fff;
+            }
+
+            @media (max-width: 1000px) {
+                #intro span {
+                    font-size: 20rem;
+                    padding-top: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="intro">
+            <a href="mungdo_main.html">
+                <div>
+                    <video height="100%" src="intro.mp4" autoplay loop muted />
+                </div>
+                <span>MUNG DO</span>
+            </a>
+        </div>
+    </body>
+</html>

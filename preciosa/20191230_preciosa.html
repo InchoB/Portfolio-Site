@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+        <title>PRECIOSA</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+
+        <link type="text/css" rel="stylesheet" href="css/preciosa_style.css" />
+        <link type="text/css" rel="stylesheet" href="css/preciosa_media.css" />
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+
+        <script type="text/javascript" src="js/preciosa_script.js"></script>
+    </head>
+
+    <body>
+        <section id="wrap" class="scroll-container">
+            <!--
+	        <section id="header" class="clearfix scroll1">
+				<div class="logo"><a href="#video_youtube"><img src="img/logo.png" alt=""></a></div>
+                <div class="head_vid">
+                <div style="position: absolute; z-index: ; width: 100%; height: 100%">
+					<iframe frameborder="0" height="100%" width="100%" 
+					src="https://www.youtube.com/embed/AlqCbPTpKUg?autoplay=1&mute=1&loop=1&rel=0&controls=0&showinfo=0&playlist=AlqCbPTpKUg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="ban_sub">
+                    <p>
+                    HEALING BEAUTY
+                    <img src="img/logo.png" alt="">
+                    </p>
+				</div>
+				</div>
+			</section>  #HEADER 
+-->
+            <section id="top_gradient" class="scroll-container">
+                <section id="contents1" class="clearfix scroll scroll2">
+                    <section class="cont1">
+                        <div class="cont1_slide">
+                            <div class="cont1_bg"></div>
+                            <!-- gif -->
+                            <div class="cont1_bg2"></div>
+                            <!-- gradient -->
+                            <div class="slide_list">
+                                <h1 class="sld_txt">MOUSE OVER HERE</h1>
+                                <div class="slide_img">
+                                    <img src="img/19287.jpg" alt="" />
+                                    <!-- <img src="img/19287.jpg" alt="" />
+                                    <img src="img/19287.jpg" alt="" /> -->
+                                </div>
+                                <div class="slide_img2">
+                                    <!-- <div class="sld_in1"> -->
+                                    <!-- <img src="img/shop1_162935.gif" alt="" /> -->
+                                    
+        <div class="head_vid">
+			<div style="position: absolute; z-index: ; width: 100%; height: 100%">
+				<iframe frameborder="0" height="100%" width="100%" 
+                src="https://www.youtube.com/embed/bbe8da7QjvM?autoplay=1&mute=1&loop=1&rel=0&controls=0&showinfo=0&playlist=AlqCbPTpKUg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+        </div>
+                                    <!-- </div> -->
+                                    <!-- <div class="sld_in2"> -->
+                                    <img src="img/bddb62cadeb04bd899e5981c62681570.gif" alt="" />
+                                    <!-- </div> -->
+                                    <!-- <div class="sld_in3"> -->
+                                    <img src="img/nld-1.gif" alt="" />
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+					<section id="video_youtube">
+						<iframe width="640" height="360" src="https://www.youtube.com/embed/AlqCbPTpKUg?amp;autoplay=1& controls=0&autohide=1&rel=0&amp;loop=1;playlist=AlqCbPTpKUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>  #VIDEO_YOUTUBE 
+-->
+
+                        <section id="nav" class="">
+                            <div><a href="#">BEST</a></div>
+                            <div><a href="#">SKIN-CARE</a></div>
+                            <div><a href="#">FACE</a></div>
+                            <div><a href="#">EYES</a></div>
+                            <div><a href="#">LIP</a></div>
+                        </section>
+                        <!-- #NAV -->
+                    </section>
+                    <!-- #VIDEO -->
+                </section>
+                <!-- #CONTENTS -->
+
+                <section id="contents2" class="clearfix scroll scroll3">
+                    <h2>BEST ITEM</h2>
+                    <ul class="cont2_inner">
+                        <li class="cont2_aside">
+                            <img src="img/lipstick-1531857_1920.jpg" alt="" />
+                            <span class="cont2_inner_txt">
+                                <h2>트윙클 멜팅 립스틱</h2>
+                                <h3>부드럽지만 입술에 착 붙는 컬러</h3>
+                                <h4>&#8361 9,800</h4>
+                            </span>
+                        </li>
+                        <li class="cont2_top">
+                            <!-- <img src="img/2293566.jpg" alt="" /> -->
+                            <!-- <ul class="cont2_top_inner">
+                                <li> -->
+                                    <img src="img/essential-oil-3073901_1920.jpg" alt="">
+                                    <img src="img/essential-oil-3139479_1920.jpg" alt="">
+                                    <img src="img/essential-oil-3868596_1920.jpg" alt="">
+                                    <img src="img/essential-oil-4065556_1920.jpg" alt="">
+                                    <img src="img/essential-oils-2738555_1920.jpg" alt="">
+                                <!-- </li>
+                            </ul> -->
+                            <span class="cont2_inner_txt">
+                                <h2>HEALING 에센셜 오일</h2>
+                                <h3>일상에 지친 당신에게</h3>
+                                <h4>&#8361 23,800</h4>
+                            </span>
+                        </li>
+
+                        <script language=javascript>
+                            $(".cont2_top").children("img:gt(0)").hide();
+                            var current = 0;
+
+                            setInterval(function(){
+                                var next = (current+1) % 3;
+                                $(".cont2_top").find("img").eq(current).fadeOut();
+                                $(".cont2_top").find("img").eq(next).fadeIn();
+                                current = next;
+                            },3000);
+
+
+                        </script>
+
+
+
+
+
+                        <li class="cont2_bot">
+                            <img src="img/make-up-1209798_1920.jpg" alt="" />
+                            <span class="cont2_inner_txt">
+                                <h2>브러쉬 8종 세트</h2>
+                                <h3>메이크업에 꼭 필요한 브러쉬</h3>
+                                <h4>&#8361 38,500</h4>
+                            </span>
+                        </li>
+                    </ul>
+                    <!--
+                <div class="cont2_inner">
+					<table>
+						<tr>
+							<td rowspan="2"><img src="img/2551223.jpg" alt=""></td>
+							<td><img src="img/2293566.jpg" alt=""></td>
+						</tr>
+						<tr>
+							<td><s src="img/2450219.jpg" alt=""></td>
+						</tr>
+					</table>
+				</div>  .CONT1_INNER 
+-->
+                </section>
+                <!-- #CONTENTS2 -->
+            </section>
+            <!-- #TOP_GRADIENT -->
+
+            <section id="contents3" class="clearfix scroll scroll4">
+                <div class="cont3_inner">
+                    <h2>NEW ITEM</h2>
+                    <ul>
+                        <li>
+                            <i><div>SKIN-CARE</div></i>
+                            <img src="img/Untitled-1.png" alt="" />
+                        </li>
+                        <li>
+                            <i><div>BASE MAKEUP</div></i>
+                            <img src="img/55.jpg" alt="" />
+                        </li>
+                        <li>
+                            <i><div>EYE MAKEUP</div></i>
+                            <img src="img/woman-2197950_1920.jpg" alt="" />
+                        </li>
+                        <li>
+                            <i><div>LIP STICK</div></i>
+                            <img src="img/19287.jpg" alt="" />
+                        </li>
+                        <li>
+                            <i><div>CLEANSING</div></i>
+                            <img src="img/O68Y1V0.jpg" alt="" />
+                        </li>
+                        <li>
+                            <i><div>MAKEUP TOOL</div></i>
+                            <img src="img/make-up-1209798_1920.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- #CONTENTS3 -->
+
+            <div id="bottom_gradient">
+                <section id="banner" class="clearfix scroll scroll5">
+                    <div class="ban_inner">
+                        <div class="ban_img">
+                            <img src="img/banner.png" alt="" />
+                        </div>
+
+                        <div class="ban_txt">
+                            <div class="ban_txt-left">
+                                <p>MAKEUP SERVICES</p>
+                                <span>Whatever, whenever, or because occasions matter - take beauty to the PRECIOSA!<br>
+                                    Our highly skilled Artists will celebrate your individuality, offering <br>
+                                    professional makeup services from applications to lessons, with a look <br>
+                                    customized just for you. </span>
+                            </div>
+                            <div class="ban_txt-right">
+                                <p>MAKEUP SERVICES</p>
+                                <span>Whatever, whenever, or because occasions matter - take beauty to the PRECIOSA!<br>
+                                    Our highly skilled Artists will celebrate your individuality, offering <br>
+                                    professional makeup services from applications to lessons, with a look <br>
+                                    customized just for you. </span>
+                            </div>
+                        </div>
+
+                        <div class="ban_btn">
+                            <div class="ban_btn-left"></div>
+                            <div class="ban_btn-right"></div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        w = 250;
+
+                        // $('.ban_img').css({ transform: 'none' }, 400);
+                        $('.ban_btn-left').click(function() {
+                            leftmoving();
+                        });
+
+                        $('.ban_btn-right').click(function() {
+                            rightmoving();
+                        });
+
+                        function leftmoving() {
+                            // $('.ban_img').css({ transform: 'none' }, 400);
+                            // $('.ban_img').animate({ left: '0vw' }, 400);
+                            $('.ban_img').css({ 'background-position': 'left, center' }, 400);
+                            $('.ban_txt-right')
+                                .animate({ right: '0vw' }, 400)
+                                .css({ opacity: '0' }, 400);
+                            $('.ban_txt-left')
+                                .animate({ left: '22vw' }, 400)
+                                .css('opacity', '1');
+                        }
+
+                        function rightmoving() {
+                            // $('.ban_img').css({ transform: 'none' }, 400);
+                            $('.ban_img').css({ 'background-position': 'right, center' }, 400);
+
+                            // $('.ban_img').animate({ right: '0vw' }, 400);
+                            $('.ban_txt-left')
+                                .animate({ left: '0vw' }, 400)
+                                .css('opacity', '0');
+                            $('.ban_txt-right')
+                                .animate({ right: '20vw' }, 400)
+                                .css({ opacity: '1' }, 400);
+                        }
+
+                        $('#banner').mouseleave(function() {
+                            $('.ban_img').css('background-position', 'center, center');
+                            $('.ban_txt-right')
+                                .animate({ right: '0vw' }, 400)
+                                .css({ opacity: '0' }, 400);
+                            $('.ban_txt-left')
+                                .animate({ left: '0vw' }, 400)
+                                .css('opacity', '0');
+                        });
+                    </script>
+                    <!-- .ban_btn.click -->
+
+                    <!--
+				<div style="position: absolute; z-index: -99; width: 100%; height: 100%">
+					<iframe frameborder="0" height="100%" width="100%" 
+					src="https://www.youtube.com/embed/AlqCbPTpKUg?autoplay=1&mute=1&loop=1&rel=0&controls=0&showinfo=0&playlist=AlqCbPTpKUg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div class="ban_sub">
+					<p>HEALING BEAUTY</p>
+				</div>
+-->
+                    <!--
+				<div class="slide">
+					<div class="slide_li">
+						<div class="slide_img">
+							<div><img src="img/19287.jpg" alt=""></div>
+							<div><img src="img/19287.jpg" alt=""></div>
+							<div><img src="img/19287.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
+-->
+                </section>
+                <!-- #BANNER -->
+
+                <section id="footer" class="clearfix scroll scroll6">
+                    <div class="foot_bdr start"></div>
+                    <div class="foot_bdr2"></div>
+                    <!-- .foot_bdr -->
+                    <div class="logo_sns">
+                        <ul class="foot_logo">
+                            <li>
+                                <a href="#header"><img src="img/logo.png" alt=""/></a>
+                            </li>
+                        </ul>
+                        <ul class="foot_sns">
+                            <li><a href="https://twitter.com/" target="_blank">twitter</a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank">instar</a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+                        </ul>
+                    </div>
+                    <!-- .logo_sns -->
+
+                    <div class="foot_box">
+                        <div class="foot_menu">
+                            <ul>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">PRODUCT</a></li>
+                                <li><a href="#">NOTICE</a></li>
+                                <li><a href="#">MEMBERSHIP</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <!-- .foot_menu -->
+                        <div class="info">
+                            <ul class="info_sub">
+                                <li><a href="#">이용약관</a></li>
+                                <li>|</li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li>|</li>
+                                <li><a href="#">고객센터</a></li>
+                                <li>|</li>
+                                <li><a href="#">사이트맵</a></li>
+                            </ul>
+                            <ul>
+                                <li>사업자등록번호: 123-45-67890</li>
+                                <li>통신판매업신고번호: 제2019-서울강남-0000호</li>
+                                <li>주소 : 서울시 강남구 어쩌구로 저쩌구 21-8</li>
+                                <li>대표 : 백인초</li>
+                                <li>개인정보 보호책임자 : 백인초</li>
+                                <li>호스팅 서비스제공자 : PRECIOSA co.</li>
+                            </ul>
+                            <ul>
+                                <li>대표전화 : 080-123-4567</li>
+                                <li>E-MAIL : 8wycad.ic21@gmail.com</li>
+                            </ul>
+                        </div>
+                        <ul class="info_mb">
+                            <li>
+                                <a href="#">
+                                    <!-- PRECIOSA<br /> -->
+                                    INFO</a
+                                >
+                            </li>
+                        </ul>
+                        <!-- .info -->
+                        <div class="copyright">
+                            © 2019 PRECIOSA ALL RIGHTS RESERVED.
+                        </div>
+                        <!-- .copyright -->
+                    </div>
+                    <!-- .foot_box-->
+                </section>
+                <!-- #FOOTER -->
+            </div>
+            <!-- #BOTTOM_GRADIENT -->
+
+            <section id="button">
+                <span>
+                    <a href="#contents1">
+                        <img src="img/logo.png" alt="" />
+                    </a>
+                </span>
+                <ul class="box">
+                    <li class="btn_menu">
+                        <!-- 三 -->
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="50px"
+                            height="50px"
+                            viewBox="175.5 171.5 165 165"
+                            enable-background="new 175.5 171.5 165 165"
+                            xml:space="preserve"
+                        >
+                            <line fill="none" stroke="#aaa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198" y1="202.4" x2="318" y2="202.4" />
+                            <line fill="none" stroke="#aaa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198" y1="256" x2="318" y2="256" />
+                            <line fill="none" stroke="#aaa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198" y1="309.6" x2="318" y2="309.6" />
+                        </svg>
+                        
+            
+                    </li>
+                    <a href="#contents1"><li class="btn btn1">#contents1</li></a>
+                    <a href="#contents2"><li class="btn btn2">#contents2</li></a>
+                    <a href="#contents3"><li class="btn btn3">#contents3</li></a>
+                    <a href="#banner"><li class="btn btn4">#banner</li></a>
+                    <a href="#footer"><li class="btn btn5">#footer</li></a>
+                    <!-- <li class="submenu">
+                        <ul class="sub1">
+                            <li><a href="#">BEST</a></li>
+                            <li><a href="#">SKIN-CARE</a></li>
+                            <li><a href="#">FACE</a></li>
+                            <li><a href="#">EYES</a></li>
+                            <li><a href="#">LIP</a></li>
+                        </ul>
+                        <ul class="sub2">
+                            <li><a href="#">BEST</a></li>
+                            <li><a href="#">SKIN-CARE</a></li>
+                            <li><a href="#">FACE</a></li>
+                            <li><a href="#">EYES</a></li>
+                            <li><a href="#">LIP</a></li>
+                        </ul>
+                    </li> -->
+                    <!--				<a href="#footer"><li class="btn btn6">#footer</li></a>-->
+                </ul>
+                <ul class="top">
+                    <!-- <li><a href="#contents1">TOP</a></li>
+                    <li>
+                        <a href="#footer">BOT<br />TOM</a>
+                    </li> -->
+                    <li>
+                        <a onclick ="ontopselect();">
+                            <svg
+                                version="1.1"
+                                id="Слой_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="32px"
+                                height="32px"
+                                viewBox="0 0 32 32"
+                                enable-background="new 0 0 32 32"
+                                xml:space="preserve"
+                            >
+                                <g id="Double_Chevron_Up">
+                                    <path
+                                        fill="#fff"
+                                        d="M9.715,16.65L16,10.456l6.285,6.196c0.395,0.391,1.033,0.391,1.428,0c0.395-0.391,0.395-1.024,0-1.415
+		l-6.999-6.899c-0.379-0.375-1.048-0.377-1.429,0l-6.999,6.9c-0.394,0.39-0.394,1.024,0,1.414
+		C8.681,17.042,9.321,17.042,9.715,16.65z"
+                                    />
+                                    <path
+                                        fill="#fff"
+                                        d="M16.714,15.338c-0.379-0.375-1.048-0.377-1.429,0l-6.999,6.898c-0.394,0.392-0.394,1.025,0,1.414
+		c0.394,0.392,1.034,0.392,1.428,0L16,17.456l6.285,6.196c0.395,0.391,1.033,0.391,1.428,0s0.395-1.024,0-1.414L16.714,15.338z"
+                                    />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick ="ondownselect();">
+                            <svg
+                                version="1.1"
+                                id="Слой_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                width="32px"
+                                height="32px"
+                                viewBox="0 0 32 32"
+                                enable-background="new 0 0 32 32"
+                                xml:space="preserve"
+                            >
+                                <g id="Double_Chevron_Down">
+                                    <path
+                                        fill="#fff"
+                                        d="M22.285,15.349L16,21.544l-6.285-6.196c-0.394-0.391-1.034-0.391-1.428,0c-0.394,0.391-0.394,1.024,0,1.414
+		l6.999,6.899c0.379,0.375,1.048,0.377,1.429,0l6.999-6.899c0.394-0.391,0.394-1.025,0-1.415
+		C23.318,14.958,22.68,14.958,22.285,15.349z"
+                                    />
+                                    <path
+                                        fill="#fff"
+                                        d="M15.286,16.662c0.379,0.375,1.048,0.377,1.429,0l6.999-6.899c0.394-0.391,0.394-1.024,0-1.414
+		c-0.394-0.391-1.034-0.391-1.428,0L16,14.544L9.715,8.349c-0.394-0.391-1.034-0.391-1.428,0c-0.394,0.391-0.394,1.024,0,1.414
+		L15.286,16.662z"
+                                    />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            
+            </section>
+            <div id="submenu">
+                <ul class="box">
+                    <li class="btn_menu">
+                        <!-- 三 -->
+                        <!-- <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="50px"
+                            height="50px"
+                            viewBox="175.5 171.5 165 165"
+                            enable-background="new 175.5 171.5 165 165"
+                            xml:space="preserve"
+                        >
+                            <line fill="none" stroke="#aaa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198" y1="202.4" x2="318" y2="202.4" />
+                            <line fill="none" stroke="#aaa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198" y1="256" x2="318" y2="256" />
+                            <line fill="none" stroke="#aaa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="198" y1="309.6" x2="318" y2="309.6" />
+                        </svg> -->
+                        <svg fill="#fff"
+                        width="50px"
+                        height="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                            <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                            <g><path d="M24.9,899.2C5,921.5,5,953.8,24.9,973.6c22.4,22.4,54.8,22.4,74.6,0l865.7-864.7c19.8-19.8,19.8-52.1,0-74.6c-19.9-19.8-52.2-19.8-74.6,0L24.9,899.2z"/><path d="M900.5,963.7c19.8,19.8,54.8,19.8,74.6,0c19.8-19.8,19.8-52.1,0-74.5L109.5,24.4c-19.8-19.8-54.8-19.8-74.6,0C15,46.8,15,79.1,34.9,99L900.5,963.7z"/></g>
+                            </svg>
+            
+                    </li>
+                </ul>
+                <!-- <ul class="sub1">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">SKIN-CARE</a></li>
+                    <li><a href="#">FACE</a></li>
+                    <li><a href="#">EYES</a></li>
+                    <li><a href="#">LIP</a></li>
+                </ul> -->
+                <ul class="sub2">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">SKIN-CARE</a></li>
+                    <li><a href="#">FACE</a></li>
+                    <li><a href="#">EYES</a></li>
+                    <li><a href="#">LIP</a></li>
+                </ul>
+            </div>
+
+            <script language=javascript>
+                // $('#button .box .btn_menu').click(function(){
+                //     $('#button .box .btn_menu').css('opacity','0')
+                //     $('#submenu .sub1').animate({right:'0vw'},500)
+                //     $('#submenu .box .btn_menu ').animate({right:'60px'},500)
+                // })
+
+                // $('#submenu .box .btn_menu').click(function(){
+                //     $('#button .box .btn_menu').css('opacity','1')
+                //     $('#submenu .sub1').animate({right:'-50vw'},500)
+                //     $('#submenu .box .btn_menu ').animate({right:'-50vw'},500)
+                // })
+
+                // var media=window.matchMedia('(max-width:1024px)')
+                $('#button .box .btn_menu').click(function(){
+                    $('#button .box .btn_menu').css('opacity','0')
+                    $('#submenu .sub2')
+                    .animate({top:'0vh'},500)
+                    $('#submenu .box .btn_menu ').animate({top:'20px'},500)
+                })
+
+                $('#submenu .box .btn_menu').click(function(){
+                    $('#button .box .btn_menu').css('opacity','1')
+                    $('#submenu .sub2')
+                    .animate({top:'-100vh'},500)
+                    $('#submenu .box .btn_menu ').animate({top:'-100vh'},500)
+                })
+
+                function ontopselect(){
+                     $('.box .btn').eq(0).click();
+                }
+
+                 function ondownselect(){
+                        $('.box .btn').eq(4).click();
+            }
+
+            </script>
+        </section>
+        <!-- #WRAP -->
+    </body>
+</html>

@@ -1,0 +1,48 @@
+/* neon sign */
+x-sign {
+    position: absolute;
+    width: $width-full;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 35vh;
+    font-size: 15rem;
+    cursor: $cursor-bone;
+    --interval: 1s;
+    display: block;
+    text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+    will-change: filter, color;
+    -webkit-filter: saturate(60%);
+    filter: saturate(60%);
+    -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+    animation: flicker steps(100) var(--interval) 1s infinite;
+
+    &:nth-of-type(1) {
+        color: lightpink;
+        --color1: pink;
+        --color2: orangered;
+        --color3: red;
+        --color4: magenta;
+        /* font-family: Bad Script; */
+        font-family: $badScript;
+        /* font-weight: bolder; */
+    }
+
+    @-webkit-keyframes flicker {
+        50% {
+            color: white;
+            -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+        }
+    }
+
+    @keyframes flicker {
+        50% {
+            color: white;
+            -webkit-filter: saturate(200%) hue-rotate(20deg);
+            filter: saturate(200%) hue-rotate(20deg);
+        }
+    }
+}

@@ -1,0 +1,199 @@
+/* .cont3 - map */
+.cont3 {
+    margin-top: 100px;
+    text-align: center;
+
+    .map {
+        width: 800px;
+        height: 650px;
+        position: relative;
+
+        iframe {
+            margin-top: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            border-radius: 20px;
+            pointer-events: none;
+        }
+
+        .mapImg {
+            position: absolute;
+            top: 17%;
+            left: 100%;
+            transform: translate(-100%, -50%);
+            border-radius: 20px;
+            /* z-index: 5; */
+
+            .mClick {
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 150px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 5px;
+                background: #eee;
+
+                .mArrowC {
+                    position: absolute;
+                    top: 40px;
+                    left: 40%;
+                    transform: translate(-50%, -50%);
+                    border-style: solid;
+                    border-width: 22px 10px 0 10px;
+                    border-color: #eee transparent transparent transparent;
+                }
+            }
+
+            .mHere {
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 150px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 5px;
+                background: crimson;
+                display: none;
+
+                .mArrowH {
+                    position: absolute;
+                    top: 40px;
+                    left: 40%;
+                    transform: translate(-50%, -50%);
+                    border-style: solid;
+                    border-width: 22px 10px 0 10px;
+                    border-color: crimson transparent transparent transparent;
+                }
+            }
+
+            &.on {
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: mapOn 3s alternate;
+            }
+
+            &.off {
+                position: absolute;
+                top: 17%;
+                left: 100%;
+                transform: translate(-100%, -50%);
+                animation: mapOff 3s alternate;
+            }
+
+            @keyframes mapOn {
+                0% {
+                    position: absolute;
+                    top: 17%;
+                    left: 100%;
+                    transform: translate(-100%, -50%);
+                }
+                10% {
+                    position: absolute;
+                    top: 23%;
+                    left: 97%;
+                    transform: translate(-100%, -50%);
+                }
+                40% {
+                    position: absolute;
+                    top: 50%;
+                    left: 98%;
+                    transform: translate(-100%, -50%);
+                }
+                80% {
+                    position: absolute;
+                    top: 80%;
+                    left: 55%;
+                    transform: translate(-100%, -50%);
+                }
+                95% {
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-100%, -50%);
+                }
+                100% {
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            @keyframes mapOff {
+                0% {
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                5% {
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-100%, -50%);
+                }
+                20% {
+                    position: absolute;
+                    top: 80%;
+                    left: 55%;
+                    transform: translate(-100%, -50%);
+                }
+                60% {
+                    position: absolute;
+                    top: 50%;
+                    left: 98%;
+                    transform: translate(-100%, -50%);
+                }
+                90% {
+                    position: absolute;
+                    top: 23%;
+                    left: 97%;
+                    transform: translate(-100%, -50%);
+                }
+                100% {
+                    position: absolute;
+                    top: 17%;
+                    left: 100%;
+                    transform: translate(-100%, -50%);
+                }
+            }
+
+            img {
+                width: 150px;
+                z-index: 99;
+            }
+            &.on img {
+                width: 50px;
+                animation: mapImgOn 3s alternate;
+            }
+            &.off img {
+                width: 150px;
+                animation: mapImgOff 3s alternate;
+            }
+
+            @keyframes mapImgOn {
+                from {
+                    width: 200px;
+                }
+                to {
+                    width: 50px;
+                }
+            }
+            @keyframes mapImgOff {
+                from {
+                    width: 20px;
+                }
+                to {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

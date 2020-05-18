@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>MADE BY FAIRY</title>
+
+        <!-- Header Icon -->
+        <link rel="shortcut icon" href="img/*.ico" type="image/x-icon" />
+
+        <!-- font
+            -Rubik / Chango / Erica+One / Bad+Script / Caveat / Cedarville+Cursive / Homemade+Apple / Permanent+Marker
+        -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik|Chango|Erica+One|Bad+Script|Caveat|Cedarville+Cursive|Homemade+Apple|Permanent+Marker|Do+Hyeon|Noto+Sans+KR|Sigmar+One|Alegreya+Sans+SC:700|Roboto+Condensed:700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- jQuery code -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- MOBILE - jQuery code -->
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script src="jscroll/jquery.jscroll.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+        <!-- MOBILE - CSS -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+        <!-- CSS / RESET - link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-m.css" />
+
+        <!-- JavaScript -->
+        <script src="js/des_script.js"></script>
+    </head>
+
+    <body>
+        <div id="Draggable" class="wrap no-touchevents touchevents">
+            <div class="header">
+                <div class="nav">
+                    <div class="head-bg">
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="1920px"
+                            height="339px"
+                            viewBox="0 0 1920 339"
+                            enable-background="new 0 0 1920 339"
+                            xml:space="preserve"
+                        >
+                            <path
+                                d="M0,0v309.293C90.904,320.683,200.435,329,326.5,329c568.83,0,690.251-72,1267-72
+	c132.002,0,239.757,8.085,326.5,19.724V0H0z"
+                            />
+                        </svg>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Family Site</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <!-- .nav > ul -->
+                    </div>
+                </div>
+                <!-- .nav -->
+            </div>
+            <!-- .header -->
+
+            <div class="mob_header">
+                <span class="burger">
+                    <svg
+                        onclick="navShow()"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="bars"
+                        class="svg-inline--fa fa-bars fa-w-14"
+                        role="img"
+                        width="50px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                    >
+                        <path
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                        ></path>
+                    </svg>
+                    <svg
+                        onclick="navHide()"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="times"
+                        class="svg-inline--fa fa-times fa-w-11"
+                        role="img"
+                        width="40px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 352 512"
+                    >
+                        <path
+                            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                        ></path>
+                    </svg>
+                </span>
+
+                <div class="mob_nav">
+                    <div class="mob_head-bg">
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            width="1920px"
+                            height="339px"
+                            viewBox="0 0 1920 339"
+                            enable-background="new 0 0 1920 339"
+                            xml:space="preserve"
+                        >
+                            <path
+                                d="M0,0v309.293C90.904,320.683,200.435,329,326.5,329c568.83,0,690.251-72,1267-72
+	c132.002,0,239.757,8.085,326.5,19.724V0H0z"
+                            />
+                        </svg>
+                        <div class="mob_menuList">
+                            <ul class="mob_menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Family Site</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <!-- .nav > ul -->
+                        </div>
+                        <!-- .mob_menuList-->
+                    </div>
+                </div>
+                <!-- .nav -->
+            </div>
+            <!-- .header -->
+
+            <div id="section" class="section">
+                <div class="none"></div>
+                <div class="page page1 home">
+                    <div class="main-circle">
+                        <h2 class="main-title">
+                            made <br />
+                            by <br />
+                            fairy
+                        </h2>
+                        <span id="scrollArrow">
+                            SCROLL
+                            <span>
+                                <svg
+                                    version="1.1"
+                                    id="Слой_1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px"
+                                    y="0px"
+                                    width="32px"
+                                    height="32px"
+                                    viewBox="0 0 32 32"
+                                    enable-background="new 0 0 32 32"
+                                    xml:space="preserve"
+                                >
+                                    <g id="Double_Chevron_Down">
+                                        <path
+                                            d="M22.285,15.349L16,21.544l-6.285-6.196c-0.394-0.391-1.034-0.391-1.428,0c-0.394,0.391-0.394,1.024,0,1.414
+                l6.999,6.899c0.379,0.375,1.048,0.377,1.429,0l6.999-6.899c0.394-0.391,0.394-1.025,0-1.415
+                C23.318,14.958,22.68,14.958,22.285,15.349z"
+                                        />
+                                        <path
+                                            d="M15.286,16.662c0.379,0.375,1.048,0.377,1.429,0l6.999-6.899c0.394-0.391,0.394-1.024,0-1.414
+                c-0.394-0.391-1.034-0.391-1.428,0L16,14.544L9.715,8.349c-0.394-0.391-1.034-0.391-1.428,0c-0.394,0.391-0.394,1.024,0,1.414
+                L15.286,16.662z"
+                                        />
+                                    </g>
+                                </svg>
+                            </span>
+                        </span>
+                        <!-- #scrollArrow -->
+                    </div>
+                    <!-- .mainCircle -->
+                </div>
+                <!-- .page .page1 .home -->
+
+                <div class="page page2 about">
+                    <div class="menu_none"></div>
+                    <div class="page-sub page-left">
+                        <div class="page-left-sub">
+                            <div class="page-left-sub__img">
+                                <img src="img/2499073.jpg" alt="fruit" />
+                            </div>
+                            <div class="page-left-sub__text">
+                                <p>Made By Fairy에서는 신선한 생과일을 사용합니다.</p>
+                                <br />
+                                신선한 제철과일을 이용하여 계절마다 가장 맛있는 디저트를 맛볼 수 있습니다.
+                                <br />
+                                <br />
+                                <span class="lorem">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br />
+                                    Explicabo cum eius eum corrupti impedit quisquam fuga unde accusamus iusto?
+                                    <br />
+                                    Laboriosam atque omnis totam sit, incidunt asperiores commodi modi?
+                                    <br />
+                                    Voluptate, necessitatibus.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .page-left -->
+                    <div class="page-sub page-right">
+                        <div class="page-right-sub">
+                            <div class="page-right-sub__img">
+                                <img src="img/unicorn-cake-topper-for-cake-P4BPXXW.JPG" alt="fruit" />
+                            </div>
+                            <div class="page-right-sub__text">
+                                <p>Made By Fairy는 요정들이 만듭니다.</p>
+                                <br />
+                                요정들의 숨결로 만들어진 디저트를 컨셉으로 하기 때문에 차별화된 귀여운 디저트를 만날 수 있습니다.
+                                <br />
+                                <br />
+                                <span class="lorem">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br />
+                                    Explicabo cum eius eum corrupti impedit quisquam fuga unde accusamus iusto?
+                                    <br />
+                                    Laboriosam atque omnis totam sit, incidunt asperiores commodi modi?
+                                    <br />
+                                    Voluptate, necessitatibus.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .page-right -->
+                </div>
+                <!-- .page .page2 .about -->
+
+                <div class="page page3 desMenu">
+                    <div class="menu_none"></div>
+                    <div class="page-sub page-left">
+                        <div class="tit-bg">
+                            <img src="img/2913570.png" alt="menu_bg" />
+                            <span class="title">Made By Fairy <br /><br /><span>MENU</span></span>
+                        </div>
+                    </div>
+                    <!-- .page-left -->
+                    <div class="page-sub page-right menuList">
+                        <div class="menuList-sub">
+                            <div class="menuList-sub__img"></div>
+                            <div class="menuList-sub__text">
+                                CUP CAKE
+                                <br />
+                                <br />
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br />
+                                    Sint consectetur a eligendi, dolor aspernatur eos odit dolore.
+                                </span>
+                            </div>
+                            <div class="menuList-sub__text">
+                                MACARON
+                                <br />
+                                <br />
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br />
+                                    Sint consectetur a eligendi, dolor aspernatur eos odit dolore.
+                                </span>
+                            </div>
+                            <div class="menuList-sub__img"></div>
+                            <div class="menuList-sub__img"></div>
+                            <div class="menuList-sub__text">
+                                CANDY POP
+                                <br />
+                                <br />
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    <br />
+                                    Sint consectetur a eligendi, dolor aspernatur eos odit dolore.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .page-right -->
+                </div>
+                <!-- .page .page3 .desMenu -->
+
+                <div class="page page4 famSite">
+                    <div id="fam">
+                        <a href="http://kingchinbear.dothome.co.kr">
+                            <section id="character">
+                                <div class="banner"><img src="img/banner3.png" alt="" /></div>
+                                <div class="title bot-left">WANGWANG<br />MARKET</div>
+                                <div class="fam-sub bot-left">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime recusandae explicabo. Fugiat porro at quae voluptas. Ipsum asperiores at laboriosam debitis,
+                                    dignissimos, expedita quod laudantium facere aliquid excepturi ducimus.
+                                </div>
+                            </section>
+                        </a>
+
+                        <a href="http://sdchokr.dothome.co.kr/escape/index.html">
+                            <section id="thriller">
+                                <div class="banner">
+                                    <img src="img/banner2.png" alt="" />
+                                </div>
+                                <div class="title top">ESCAPE<br />CRIME SCENE</div>
+                                <div class="fam-sub top">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime recusandae explicabo. Fugiat porro at quae voluptas. Ipsum asperiores at laboriosam debitis,
+                                    dignissimos, expedita quod laudantium facere aliquid excepturi ducimus.
+                                </div>
+                            </section>
+                        </a>
+
+                        <a href="http://wontae.dothome.co.kr">
+                            <section id="garden">
+                                <div class="banner"><img src="img/banner1.jpg" alt="" /></div>
+                                <div class="title bot-right">FAIRY<br />GARDEN</div>
+                                <div class="fam-sub bot-right">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime recusandae explicabo. Fugiat porro at quae voluptas. Ipsum asperiores at laboriosam debitis,
+                                    dignissimos, expedita quod laudantium facere aliquid excepturi ducimus.
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                </div>
+                <!-- .page .page4 .famSite -->
+
+                <div class="page page5 contact">
+                    <div class="menu_none"></div>
+                    <div class="page-sub page-left">
+                        <div class="page-left__img">
+                            <img src="img/map.png" alt="map" />
+                        </div>
+                    </div>
+                    <!-- .page-left -->
+                    <div class="page-sub page-right">
+                        <div class="page-right-sub">
+                            <div class="form">
+                                <div class="form-sub id">
+                                    <span> ID : </span>
+                                    <span>
+                                        <input type="text" name="id" />
+                                    </span>
+                                </div>
+                                <div class="form-sub pw">
+                                    <span> PW : </span>
+                                    <span>
+                                        <input type="password" />
+                                    </span>
+                                </div>
+                                <div class="form-sub text">
+                                    <span>내용 : </span>
+                                    <span>
+                                        <textarea></textarea>
+                                    </span>
+                                </div>
+                                <button>보내기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .page-right -->
+                </div>
+                <!-- .page .page5 .contact -->
+            </div>
+            <!-- .section -->
+
+            <div class="aside">
+                <ul>
+                    <li class="item"><a href="#" class="on">1</a></li>
+                    <li class="item"><a href="#">2</a></li>
+                    <li class="item"><a href="#">3</a></li>
+                    <li class="item"><a href="#">4</a></li>
+                    <li class="item"><a href="#">5</a></li>
+                </ul>
+            </div>
+            <!-- aside -->
+        </div>
+        <!-- .wrap -->
+    </body>
+</html>

@@ -1,0 +1,127 @@
+/* .page4 .about*/
+.page4 {
+    #fam {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+
+        a {
+            color: #000;
+
+            &:hover div {
+                color: #fff;
+                background: rgba(0, 0, 0, 0.3);
+                mix-blend-mode: normal;
+            }
+
+            #character {
+                float: left;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 38vw;
+                height: 100vh;
+                background: url(../img/intro_character.png) right bottom no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: url(../img/intro_character_hover.png) right bottom no-repeat;
+                    background-size: cover;
+                }
+            }
+            /*  #character*/
+
+            #thriller {
+                width: 100vw;
+                height: 100vh;
+                background: url(../img/intro.png) center center no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: url(../img/intro_hover.png) center center no-repeat;
+                    background-size: cover;
+                }
+            }
+            /* #thriller */
+
+            #garden {
+                float: right;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 38vw;
+                height: 100vh;
+                background: url(../img/intro_garden.png) left bottom no-repeat;
+                background-size: cover;
+
+                &:hover {
+                    background: url(../img/intro_garden_hover.png) left bottom no-repeat;
+                    background-size: cover;
+                }
+            }
+            /* #garden */
+
+            .title {
+                font-size: 3.5rem;
+                font-weight: bolder;
+                position: absolute;
+                width: 400px;
+                height: 200px;
+                line-height: 100px;
+                text-align: center;
+                mix-blend-mode: screen;
+
+                &.top {
+                    top: 200px;
+                    left: calc(50% - 200px);
+                }
+
+                &.bot-left {
+                    bottom: 50px;
+                    left: 50px;
+                }
+
+                &.bot-right {
+                    bottom: 50px;
+                    right: 70px;
+                }
+            }
+            /* .title */
+
+            .fam-sub {
+                width: 400px;
+                height: 250px;
+                line-height: 2;
+                font-size: 1.1rem;
+                position: absolute;
+                mix-blend-mode: screen;
+                text-align: center;
+                padding: 20px;
+                box-sizing: border-box;
+
+                &.top {
+                    top: 400px;
+                    left: calc(50% - 200px);
+                }
+
+                &.bot-left {
+                    bottom: 250px;
+                    left: 50px;
+                }
+
+                &.bot-right {
+                    bottom: 250px;
+                    right: 70px;
+                }
+            }
+            /* .fam-sub */
+
+            .banner {
+                display: none;
+            } /* .banner*/
+        }
+        /* #fam a */
+    }
+    /* #fam */
+}
+/* .page4 .about_end*/

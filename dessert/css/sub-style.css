@@ -1,0 +1,39 @@
+/* :ROOT */
+
+:root {
+    /* color */
+    --color-main: #;
+    --color-sub: #;
+    --color-bg: #;
+
+    /* font-family */
+    /* bold */
+    --font-rubik: 'Rubik', sans-serif;
+    --font-chango: 'Chango', cursive;
+    --font-ericaOne: 'Erica One', cursive;
+    /* slant */
+    --font-badScript: 'Bad Script', cursive;
+    --font-cedarvilleCursive: 'Cedarville Cursive', cursive;
+    --font-Caveat: 'Caveat', cursive;
+    --font-homemadeApple: 'Homemade Apple', cursive;
+    --font-permanentMarker: 'Permanent Marker', cursive;
+    /* korean */
+    --font-doHyeon: 'Do Hyeon', sans-serif;
+    --font-notoSans: 'Noto Sans KR', sans-serif;
+}
+
+/* RESET */
+
+* {
+    font-family: var(--font-rubik);
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.clearfix::before,
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: block;
+}
