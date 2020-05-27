@@ -1,0 +1,168 @@
+/* =============================
+   �������������� �ҽ��Դϴ�.
+   �����ο� �°� Ŀ���� �����մϴ�.
+   ============================= */
+
+
+
+/* PC �ػ� */
+$(function() {
+
+	// ���� �����̵���
+	$('.pc_mainslider .inner').slick({
+		infinite: true,
+		speed: 800,
+		arrows: true,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		dots: true,
+		draggable: false,
+	});
+
+	// �ǻ�ǰ ���̾ƿ�ó��
+	$('.tab_product .goods_tab_box').each(function() {
+		var tabChildLength = $(this).find('li').length;
+		if(tabChildLength < 6) {
+			$(this).addClass('on_length');
+		}
+	});
+
+	// �Խ��� �����̵�
+	$('.board_wrap ul').slick({
+		infinite: true,
+		speed: 800,
+		dots: false,
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		centerMode: true,
+		draggable: false,
+		responsive: [
+	        {
+	          breakpoint: 640,
+	          settings: {
+	            centerMode: false,
+	            slidesToShow: 1,
+				draggable: false,
+	          }
+	        }
+	    ]
+	});
+
+	// �����ı� �����̵���
+	$('.review_wrap ul.inner').slick({
+		infinite: true,
+		speed: 800,
+		dots: false,
+		arrows: true,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		draggable: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+	        {
+	          breakpoint: 1051,
+	          settings: {
+	            slidesToShow: 3
+	          }
+	        },
+			{
+	          breakpoint: 641,
+	          settings: {
+	            slidesToShow: 2,
+				dots: true,
+				arrows: false,
+				draggable: false,
+	          }
+	        },
+	    ]
+	});
+
+	// �������� Ŭ����
+	$('.video_wrap ul li').click(function() {
+		$('.bg_black,.close_pop').fadeIn();
+		$(this).find('.video_inner').fadeIn();
+	});
+	$('.close_pop').click(function() {
+		$('.video_wrap .video_inner,.bg_black,.close_pop').fadeOut();
+	});
+
+	// ������ ����¡ ����
+	$('.bg_black,.close_pop').click(function(e) {
+		stopYoutube();
+		e.preventDefault();
+	});
+
+});
+
+/* Youtube API �ε� */
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+var player1;
+
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('video-1', {
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+		}
+	});
+	player1 = new YT.Player('video-2', {
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+		}
+	});
+}
+
+function onPlayerReady(event) {
+	//console.log('onPlayerReady ����');
+	//        event.target.playVideo();
+}
+var playerState;
+
+function onPlayerStateChange(event) {
+	playerState = event.data == YT.PlayerState.ENDED ? '�����' :
+		event.data == YT.PlayerState.PLAYING ? '��� ��' :
+		event.data == YT.PlayerState.PAUSED ? '�Ͻ����� ��' :
+		event.data == YT.PlayerState.BUFFERING ? '���۸� ��' :
+		event.data == YT.PlayerState.CUED ? '����غ� �Ϸ��' :
+		event.data == -1 ? '���۵��� ����' : '����';
+
+	//console.log('onPlayerStateChange ����: ' + playerState);
+}
+
+function stopYoutube() {
+	player.seekTo(0, true);
+	player.stopVideo();
+	player1.seekTo(0, true);
+	player1.stopVideo();
+}
+
+
+
+/* MOBILE �ػ� */
+$(function() {
+
+	//  ���� �����̵���
+	$('.m_mainslider .inner').slick({
+		infinite: true,
+		speed: 500,
+		dots: false,
+		arrows: false,
+		fade: true,
+		autoplay: false,
+		autoplaySpeed: 4000,
+		dots: true,
+		draggable: false,					  
+	});
+
+});

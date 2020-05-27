@@ -1,0 +1,90 @@
+/* ===================
+     기본 CSS 세팅 소스
+   =================== */
+
+
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: "";
+	display:block;
+	clear:both;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.inline {
+	font-size: 0;
+}
+
+.inline>* {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.relative {
+    position: relative;
+}
+
+.text-one-line {
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow : ellipsis;
+}
+
+.text-one-line-m {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;    
+}
+
+.easing-one {
+    -khtml-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.easing-two {
+    -khtml-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.easing-three {
+    -khtml-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
